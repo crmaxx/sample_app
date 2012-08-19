@@ -29,6 +29,8 @@ GEM
     activesupport (3.2.4.rc1)
       i18n (~> 0.6)
       multi_json (~> 1.0)
+    annotate (2.5.0)
+      rake
     arel (3.0.2)
     autotest (4.4.6)
       ZenTest (>= 4.4.1)
@@ -133,6 +135,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  annotate (= 2.5.0)
   autotest (= 4.4.6)
   autotest-fsevent (= 0.2.8)
   autotest-growl (= 0.2.16)
