@@ -20,6 +20,7 @@ end
 
 gem 'jquery-rails'
 gem 'gravatar_image_tag', '1.1.3'
+gem 'will_paginate', '3.0.3'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -40,6 +41,7 @@ group :development do
 	gem 'sqlite3', '1.3.6'
 	gem 'rspec-rails', '2.11.0'
   gem 'annotate', '2.5.0'
+  gem 'faker', '1.1.2'
 end
 
 group :test do
