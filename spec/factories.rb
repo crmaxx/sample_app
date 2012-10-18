@@ -1,16 +1,40 @@
-# Используя символ ':user', мы указываем Factory Girl на необходимость симулировать модель User.
-Factory.define :user do |user|
-  user.name                  "Michael Hartl"
-  user.email                 "mhartl@example.com"
-  user.password              "foobar"
-  user.password_confirmation "foobar"
+FactoryGirl.define do
+  factory :user do
+    sequence(:name)  { |n| "Person #{n}" }
+    sequence(:email) { |n| "person_#{n}@example.com"}   
+    password "foobar"
+    password_confirmation "foobar"
+
+    factory :admin do
+      admin true
+    end
+  end
+
+  factory :micropost do
+    content "Lorem ipsum"
+    user
+  end
 end
 
-Factory.sequence :email do |n|
-  "person-#{n}@example.com"
-end
 
-Factory.define :micropost do |micropost|
-  micropost.content "Foo bar"
-  micropost.association :user
-end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
